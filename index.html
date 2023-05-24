@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ukrainian Folklore: Fairy Tales</title>
+    <style>
+      /* margin, padding, font-size, font-weight, color, background (with linear-gradient), line-height, box-shadow, border, transition */
+      body {
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman",
+          sans-serif;
+      }
+
+      h1 {
+        font-size: 28px;
+        font-weight: 900;
+        letter-spacing: 1em;
+        color: #4e4444;
+        margin: 10px;
+      }
+
+      hr {
+        border: none;
+        border-top: 3px double #333;
+        color: #333;
+        overflow: visible;
+        text-align: center;
+        height: 5px;
+      }
+
+      h2 {
+        letter-spacing: 0.6em;
+        color: #915b4a;
+        margin: 10px auto;
+      }
+
+      img {
+        display: block;
+        max-width: 800px;
+        margin: 0 auto;
+        border: 2px solid #333;
+        border-radius: 50px;
+      }
+
+      p {
+        font-size: 17px;
+        line-height: 1em;
+        color: #664235;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      a {
+        display: block;
+        margin: 5px;
+        color: #664235;
+        letter-spacing: 0.2em;
+        word-spacing: 0.2em;
+      }
+
+      button {
+        display: block;
+        margin: 15px auto 15px;
+        padding: 20px 50px;
+        background: linear-gradient(
+          109.5deg,
+          rgb(209, 214, 153) 11.2%,
+          rgb(201, 177, 153) 100.2%
+        );
+        opacity: 0.8;
+        color: #333;
+        font-weight: 700;
+        font-size: 16px;
+        text-shadow: 5px 5px 10px rgba(188, 134, 192, 0.4);
+        box-shadow: 5px 5px 10px rgba(151, 98, 155, 0.4);
+        border: none;
+        border-radius: 10px;
+        transition: 300ms all ease-in-out;
+        cursor: pointer;
+      }
+
+      .main {
+        position: relative;
+      }
+
+      .contact-info {
+        font-size: 14px;
+      }
+
+      .container::before {
+        content: "";
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/506/original/avatar_2246_max.jpg?1671006354");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        background-position: center;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.2;
+      }
+
+      hr:after {
+        background: linear-gradient(
+          109.5deg,
+          rgb(229, 233, 177) 11.2%,
+          rgb(223, 205, 187) 100.2%
+        );
+        content: "§";
+        padding: 0 4px;
+        position: relative;
+        top: -13px;
+      }
+
+      a:hover {
+        color: rgb(143, 136, 136);
+      }
+
+      button:hover {
+        background: #333;
+        color: rgb(185, 169, 153);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <!-- h1, h2, p, div, span, strong, em, br, hr, a, img, button -->
+        <h1><strong>Ukrainian Folklore</strong></h1>
+        <hr />
+      </div>
+      <div class="main">
+        <h2>Fairy Tales</h2>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/506/original/avatar_2246_max.jpg?1671006354"
+          width="500px"
+          title="Telesik-Little Stick (Ukrainian Folk tale)"
+        /><br />
+        <p>
+          Ukrainian folk fairy tales is a popular genre of Ukrainian traditional
+          folk art.
+        </p>
+        <p>
+          These stories, which have been handed down from generation to
+          generation, embody wisdom of the ancestors, their life experience,
+          feelings and dreams.
+        </p>
+        <p>
+          The main idea of any folk fairy tale is that a good, kind, brave and
+          honest person with an open heart always overcomes all obstacles and
+          gains victory over evil forces.
+        </p>
+        <p>
+          Let`s get into details and learn interesting facts about the
+          characters and topics of
+          <a
+            href="https://en.derevo-kazok.org/ukrainian-folk-tales/"
+            target="_blank"
+          >
+            Ukrainian fairy tales.</a
+          >
+        </p>
+        <button>
+          <span>Contact us</span>
+        </button>
+      </div>
+      <div class="footer">
+        <p class="contact-info">
+          Coded by Khrystyna Karieva <br />
+          <em>hrustjavons@gmail.com</em>
+        </p>
+      </div>
+    </div>
+    <script>
+      function contactButton() {
+        let nameUser = prompt("What is your name?👩👨");
+        let ageUser = prompt("How old are you?");
+        let emailUser = prompt("What is your email?");
+        if (ageUser <= 8) {
+          alert(
+            `Hello ${nameUser}! You can read some book include Ukrainian fairy tales with your parents in our web-sites.👨‍🏫📙`
+          );
+        } else {
+          alert(
+            `Hello ${nameUser}! We are very proud of your visiting  in our web-page📚 Be pleasent 🕰 and wait for some time our answer. 📘`
+          );
+        }
+      }
+      let buttonReques = document.querySelector("button");
+      buttonReques.addEventListener("click", contactButton);
+    </script>
+  </body>
+</html>
+
+<!-- https://destinations.ua/art/ukrainian-folklore-fairy-tales -->
